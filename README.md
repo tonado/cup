@@ -21,8 +21,9 @@ $ cd /usr/local/lib/jvm && sudo ln -s jdk1.8.0_91 default
 - Export `JAVA_HOME` and `PATH`
 
 ```bash
-$ export JAVA_HOME='/usr/local/lib/java/default'
-$ export PATH="$PATH:$JAVA_HOME/bin"
+$ vim ~/.bashrc
+export JAVA_HOME='/usr/local/lib/java/default'
+export PATH="$PATH:$JAVA_HOME/bin"
 $ source ~/.bashrc
 ```
 
