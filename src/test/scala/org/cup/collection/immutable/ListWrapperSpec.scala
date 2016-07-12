@@ -1,4 +1,4 @@
-package org.cup.collection
+package org.cup.collection.immutable
 
 import org.scalatest.Matchers._
 import org.scalatest._

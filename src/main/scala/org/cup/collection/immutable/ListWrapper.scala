@@ -1,4 +1,4 @@
-package org.cup.collection
+package org.cup.collection.immutable
 
 import scala.math.Ordering
 
