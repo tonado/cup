@@ -2,10 +2,10 @@ package org.cup.collection.immutable
 
 import scala.math.Ordering
 
-case class ListWrapper[A](list: List[A]) {
-  //  def sortBy[B](f: A => B)(implicit ord: Ordering[B]): List[A] =
-  //    list.sortBy(f)(ord)
+case class ListWrapper[A](seq: Seq[A]) {
+//    def sortBy[B](f: A => B)(implicit ord: Ordering[B]): Seq[A] =
+//      seq.sortBy(f)
 
-  def sortBy[B : Ordering](f: A => B): List[A] =
-    list.sortBy(f)
+  def sortBy[B : Ordering](f: A => B): Seq[A] =
+    seq.sortBy(f)
 }

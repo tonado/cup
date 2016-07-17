@@ -9,11 +9,11 @@ object FileMatcher {
     file.listFiles.filter(f => matcher(f.getName))
 
   def ends(file: File, ext: String) =
-    list(file) { _.endsWith(ext) }
+    list(file) { _ endsWith ext }
 
   def contains(file: File, query: String) =
-    list(file) { _.contains(query) }
+    list(file) { _ contains query }
 
   def matches(file: File, regex: String) =
-    list(file) { _.matches(regex) }
+    list(file) { _ matches regex }
 }
